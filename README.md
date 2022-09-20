@@ -13,6 +13,7 @@ this is to install compilers, transpilers and module bundling tool
 
 #### configuration
 1. configuration typescript compiler: tsconfig.json
+```
 {
     "compilerOptions": {
         "target": "es6",
@@ -20,8 +21,9 @@ this is to install compilers, transpilers and module bundling tool
         "sourceMap": true
     }
 }
-
+```
 2. configuration webpack: webpack.config.js
+```
 module.exports = {
     entry: "./main",
     output: { filename: "app.js" },
@@ -37,17 +39,20 @@ module.exports = {
         extensions: [".ts", ".js"]
     }
 }
+```
  output: the final .js file that can be loaded in index.html
  module: any file ends in .ts extension is to use the loader "ts-loader". webpack can take the resulting .js file and bundle it with app.js
 
 #### configuration the following script in package.json
+```
 "scripts": {
     "start": "webpack-dev-server --static-watch",
     "postinstall": "typings install"
   }
+  ```
 
 #### run the application
-npm start
+npm run start
 
 
 ### References
