@@ -2,14 +2,7 @@
 Getting Started with Reactive Programming with RxJs by Scott Allen PluralSight
 ### Dev environment setup
 #### pre-requsit
-npm
-
-#### installation of tools
-1. use npm init to create package.json
-2. npm install rxjs --save
-3. npm install webpack-cli webpack webpack-dev-server typescript typings ts-loader --save-dev
-this is to install compilers, transpilers and module bundling tool
-4. node_modules/.bin/typings install dt~es6-shim --global --save
+npm install
 
 #### configuration
 1. configuration typescript compiler: tsconfig.json
@@ -57,3 +50,4 @@ npm run start
 
 ### References
 reactives.io
+https://github.com/marcus4guyen/RxJS-GettingStarted-Pluralsight
