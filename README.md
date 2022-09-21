@@ -18,6 +18,7 @@ npm install
 2. configuration webpack: webpack.config.js
 ```
 module.exports = {
+    devtool: "eval-source-map",
     entry: "./main",
     output: { filename: "app.js" },
     module: {
@@ -30,7 +31,8 @@ module.exports = {
     },
     resolve: {
         extensions: [".ts", ".js"]
-    }
+    },
+    mode: 'development'
 }
 ```
  output: the final .js file that can be loaded in index.html
@@ -45,9 +47,19 @@ module.exports = {
   ```
 
 #### run the application
+delete node_modules
+npm install
 npm run start
 
+#### Projects
+1. hello: basic to check the build and configuration 
+2. observer: simple observable and observer
+3. easierObserver: observer using arrow function
+4. observableCreate: using Observable.create
+5. observableCreateWithError: Observable.create with error emitted
 
 ### References
 reactives.io
 https://github.com/marcus4guyen/RxJS-GettingStarted-Pluralsight
+https://stackoverflow.com/questions/61767538/devtools-failed-to-load-sourcemap-for-webpack-node-modules-js-map-http-e
+https://webpack.js.org/configuration/devtool/
