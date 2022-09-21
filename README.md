@@ -41,7 +41,7 @@ module.exports = {
 #### configuration the following script in package.json
 ```
 "scripts": {
-    "start": "webpack-dev-server --static-watch",
+    "start": "webpack-dev-server --watch --inline",
     "postinstall": "typings install"
   }
   ```
