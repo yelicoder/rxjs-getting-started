@@ -57,6 +57,7 @@ npm run start
 3. easierObserver: observer using arrow function
 4. observableCreate: using Observable.create
 5. observableCreateWithError: Observable.create with error emitted
+6. async: use timeout to simulate async observable
 
 ### References
 reactives.io
