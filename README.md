@@ -58,9 +58,13 @@ npm run start
 4. observableCreate: using Observable.create
 5. observableCreateWithError: Observable.create with error emitted
 6. async: use timeout to simulate async observable
+7. mapOperator: map operator example
+8. filterOperator: filter operator example
+9. reduceJSSize: import only the needed library to reduce the size of the app.js. Was 3.7M. Put cursor in "rxjs" and press F12 to open Rx.d.ts. When importing from just rxjs/Observable, the app.js size reduced to 969kb. The got exception for map function. Fixed it by importing rxjs/add/operator/map and /rxjs/add/operator/filter. The size of app.js is now 1M. We can import rxjs during development phase and fix the import before moving to testing region
 
 ### References
 reactives.io
 https://github.com/marcus4guyen/RxJS-GettingStarted-Pluralsight
 https://stackoverflow.com/questions/61767538/devtools-failed-to-load-sourcemap-for-webpack-node-modules-js-map-http-e
 https://webpack.js.org/configuration/devtool/
+http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
