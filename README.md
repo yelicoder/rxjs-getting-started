@@ -61,6 +61,20 @@ npm run start
 7. mapOperator: map operator example
 8. filterOperator: filter operator example
 9. reduceJSSize: import only the needed library to reduce the size of the app.js. Was 3.7M. Put cursor in "rxjs" and press F12 to open Rx.d.ts. When importing from just rxjs/Observable, the app.js size reduced to 969kb. The got exception for map function. Fixed it by importing rxjs/add/operator/map and /rxjs/add/operator/filter. The size of app.js is now 1M. We can import rxjs during development phase and fix the import before moving to testing region
+10. mouseEvent: Observable.fromEvent to capture all mouse moving event
+11. mouseEventWithMapOperator: map opeartor applied to mouse move event
+12. mouseEventWithFilterOperator: filter operator applied to mouse move envent
+13. trackMouse: track mouse move as a circle
+14. trackMouseDelay: track mouse move with a delay
+15. xmlHttpRequest: using xmlHttpRequest to load movies. fromEvent.
+16. httpResponseAsObservable: returns from xmlHttpRequest as Observable. Other options: Promise, call back function. rxjs solution is observable. click returns Observable
+17. flatMapObservableResponse: click returns object
+18. renderMoviesWithFlatMap
+19. loadBeingLazy: load without subscribe does not do anything.
+20. loadBeingSubscribed: load is subscribed. Movies are rendered as soon as the page load
+
+
+
 
 ### References
 reactives.io
