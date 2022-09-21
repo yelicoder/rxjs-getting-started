@@ -47,9 +47,9 @@ module.exports = {
   ```
 
 #### run the application
-delete node_modules
-npm install
-npm run start
+1. delete node_modules
+2. npm install
+3. npm run start
 
 #### Projects
 1. hello: basic to check the build and configuration 
