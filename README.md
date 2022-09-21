@@ -2,7 +2,7 @@
 Getting Started with Reactive Programming with RxJs by Scott Allen PluralSight
 ### Dev environment setup
 #### pre-requsit
-npm install
+npm
 
 #### configuration
 1. configuration typescript compiler: tsconfig.json
