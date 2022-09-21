@@ -51,7 +51,7 @@ module.exports = {
 2. npm install
 3. npm run start
 
-#### Projects
+### Projects
 1. hello: basic to check the build and configuration 
 2. observer: simple observable and observer
 3. easierObserver: observer using arrow function
