@@ -72,7 +72,14 @@ module.exports = {
 18. renderMoviesWithFlatMap
 19. loadBeingLazy: load without subscribe does not do anything.
 20. loadBeingSubscribed: load is subscribed. Movies are rendered as soon as the page load
-
+21. errorCondition: loading the wrong file name to simulate a 404 condition. Has Uncaught SyntaxError
+22. handleErrorCondition: add error checking in load event and log error in console
+23. retry: retry operator on Observable
+24. retryWhen: infinit loop
+25. retryWhenDelay: delayed infinit loop.
+26. retryWithCounting: scan operator
+27. retryStrategy: takeWhile operator
+28. retryStrategyWithPar: parameterized
 
 
 
