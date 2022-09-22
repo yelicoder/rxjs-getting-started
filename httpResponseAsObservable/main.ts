@@ -29,6 +29,9 @@ function renderMovies(movies) {
   });
 }
 
+// the map operator below maps the click event
+// to an observable returned by load function
+// the observable returned by load function is then subscribed
 click.map( e=> load("movies.json")).subscribe(o => console.log(o));
 
 

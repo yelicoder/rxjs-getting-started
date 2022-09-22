@@ -31,7 +31,12 @@ function renderMovies(movies) {
 
 click.flatMap(e => load("movies.json"))
   .subscribe(
-    renderMovies,
+
+  movies => renderMovies(movies), 
+  // it is interesting here that we can shorten 
+  // movies => renderMovies(movies)
+  // to renderMovies only 
+    //renderMovies,
     e => console.log(`error: ${e}`),
     () => console.log("complete")
   )

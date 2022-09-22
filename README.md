@@ -67,8 +67,8 @@ module.exports = {
 13. trackMouse: track mouse move as a circle
 14. trackMouseDelay: track mouse move with a delay
 15. xmlHttpRequest: using xmlHttpRequest to load movies. fromEvent.
-16. httpResponseAsObservable: returns from xmlHttpRequest as Observable. Other options: Promise, call back function. rxjs solution is observable. click returns Observable
-17. flatMapObservableResponse: click returns object
+16. httpResponseAsObservable: returns from xmlHttpRequest as Observable. Other options: Promise, call back function. rxjs solution is observable. click returns Observable. map from one observable to another
+17. flatMapObservableResponse: click returns object. flatMap map from one observable to the data emitted from the other observable. In other words, it maps from one observable to another and then subscribe to the second.
 18. renderMoviesWithFlatMap
 19. loadBeingLazy: load without subscribe does not do anything.
 20. loadBeingSubscribed: load is subscribed. Movies are rendered as soon as the page load
