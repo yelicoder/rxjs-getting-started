@@ -80,6 +80,11 @@ module.exports = {
 26. retryWithCounting: scan operator
 27. retryStrategy: takeWhile operator
 28. retryStrategyWithPar: parameterized
+29. observableWithPromise
+30. observableWithPromiseDirectLoad: fetch is not lazy loading. movies.json is loaded when loading the screen without being subscribed
+31. observableWithPromiseLazyLoad: using Observable.defer, the fetch is not immediately called. Switch betweeen the loadWithFetch with or without subscribe to see the difference
+
+
 
 
 
@@ -89,3 +94,6 @@ https://github.com/marcus4guyen/RxJS-GettingStarted-Pluralsight
 https://stackoverflow.com/questions/61767538/devtools-failed-to-load-sourcemap-for-webpack-node-modules-js-map-http-e
 https://webpack.js.org/configuration/devtool/
 http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
+https://fetch.spec.whatwg.org/
+
+
