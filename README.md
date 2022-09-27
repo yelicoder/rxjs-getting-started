@@ -89,11 +89,14 @@ module.exports = {
 
 
 ### References
-reactives.io
-https://github.com/marcus4guyen/RxJS-GettingStarted-Pluralsight
-https://stackoverflow.com/questions/61767538/devtools-failed-to-load-sourcemap-for-webpack-node-modules-js-map-http-e
-https://webpack.js.org/configuration/devtool/
+1. reactives.io
+2. https://github.com/marcus4guyen/RxJS-GettingStarted-Pluralsight
+3. https://stackoverflow.com/questions/61767538/devtools-failed-to-load-sourcemap-for-webpack-node-modules-js-map-http-e
+4. https://webpack.js.org/configuration/devtool/
 http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
-https://fetch.spec.whatwg.org/
+5. https://fetch.spec.whatwg.org/
+6. Operators: https://reactivex.io/documentation/operators.html#categorized
+7. Operators decision tree: https://reactivex.io/documentation/operators.html#tree
+
 
 
