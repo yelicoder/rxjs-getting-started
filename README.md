@@ -7,7 +7,7 @@ npm
 #### start from scratch
 1. npm init
 2. npm install rxjs --save
-3. npm install webpack webpack-dev-server typescript typings ts-loader --save-dev
+3. npm install webpack webpack-cli webpack-dev-server typescript typings ts-loader --save-dev
 4. node_modules/.bin/typings install dt~es6-shim --global --save
 
 
@@ -97,6 +97,12 @@ module.exports = {
 36. throwOperator: Obserbable.throw (new Error (".....")) when creating Observable can be handled when subscribed
 37. onErrorResumeNextOperator: this operator will enable the Observable to ignore the error and continue to emit the values. 
 38. catchOperator: catch operator can catch the error, log it and continue 
+39. rejectPromise: use Promise.reject when fetch is not successful. the uncaught exception has a response object
+40. rejectPromiseWithErrorHandler: error displayed in the console
+41. retryOnPromise: only trying to process the promise not to retry the network call
+42. retryOnObservable: retry the network operation
+43. propagateErrorAfterRetry: make sure observer got the error after retry. The throw operation in retryWhen is inside try/catch block. So throw new error works here
+
 
 
 
