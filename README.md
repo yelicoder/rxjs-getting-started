@@ -83,6 +83,11 @@ module.exports = {
 29. observableWithPromise
 30. observableWithPromiseDirectLoad: fetch is not lazy loading. movies.json is loaded when loading the screen without being subscribed
 31. observableWithPromiseLazyLoad: using Observable.defer, the fetch is not immediately called. Switch betweeen the loadWithFetch with or without subscribe to see the difference
+32. unCaughError: observer subscribe not passing the argument for observable's error. error is an unhandled excdeption. Uncaught error will show on console
+33. errorHandling: subscribe has error handlingcd 
+34. throwError: error handling in subscribe displayed error in console. Throw error will cause unCaughtError and "Unreachable code detected". Throw error simulates the errors that was not expected
+35.
+
 
 
 
