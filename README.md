@@ -4,10 +4,17 @@ Getting Started with Reactive Programming with RxJs by Scott Allen PluralSight
 #### pre-requsit
 npm
 
+#### start from scratch
+1. npm init
+2. npm install rxjs --save
+3. npm install webpack webpack-dev-server typescript typings ts-loader --save-dev
+4. node_modules/.bin/typings install dt~es6-shim --global --save
+
+
 #### configuration
 1. configuration typescript compiler: tsconfig.json
 ```
-{
+
     "compilerOptions": {
         "target": "es6",
         "module": "commonjs",
@@ -86,7 +93,13 @@ module.exports = {
 32. unCaughError: observer subscribe not passing the argument for observable's error. error is an unhandled excdeption. Uncaught error will show on console
 33. errorHandling: subscribe has error handlingcd 
 34. throwError: error handling in subscribe displayed error in console. Throw error will cause unCaughtError and "Unreachable code detected". Throw error simulates the errors that was not expected
-35.
+35. observableMerge: use merge to create observable
+36. throwOperator: Obserbable.throw (new Error (".....")) when creating Observable can be handled when subscribed
+37. onErrorResumeNextOperator: this operator will enable the Observable to ignore the error and continue to emit the values. 
+38. catchOperator: catch operator can catch the error, log it and continue 
+
+
+
 
 
 
