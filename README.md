@@ -102,6 +102,9 @@ module.exports = {
 41. retryOnPromise: only trying to process the promise not to retry the network call
 42. retryOnObservable: retry the network operation
 43. propagateErrorAfterRetry: make sure observer got the error after retry. The throw operation in retryWhen is inside try/catch block. So throw new error works here
+44. subscription: subscribe to an observable generate a subscriber handle
+45. unsubscribe: unsubscribe will call the returned function that the observable returns
+46. retryAutoUnsubscribe: retry will automatically unsubscribe
 
 
 
